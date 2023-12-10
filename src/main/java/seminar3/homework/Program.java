@@ -8,6 +8,15 @@ import java.util.List;
 import static seminar3.homework.StudentApp.*;
 
 public class Program {
+    /*
+    Разработайте класс Student с полями String name, int age, transient double GPA (средний балл).
+    Обеспечьте поддержку сериализации для этого класса.
+    Создайте объект класса Student и инициализируйте его данными.
+    Сериализуйте этот объект в файл.
+    Десериализуйте объект обратно в программу из файла.
+    Выведите все поля объекта, включая GPA, и обсудите, почему значение GPA не было сохранено/восстановлено.
+2. * Выполнить задачу 1 используя другие типы сериализаторов (в xml и json документы).
+     */
 
     public static void main(String[] args) throws FileNotFoundException {
         Student student = new Student("Olga", 21, 3.5);
