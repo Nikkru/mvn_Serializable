@@ -7,6 +7,9 @@ public class Student implements Serializable {
     private int age;
     private transient double gpa;
 
+    public Student() {
+    }
+
     public Student(String name, int age, double gpa) {
         this.name = name;
         this.age = age;
