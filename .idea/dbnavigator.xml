@@ -12,13 +12,8 @@
     <loaded-nodes />
   </component>
   <component name="DBNavigator.Project.DatabaseConsoleManager">
-    <connection id="801a3d2d-b26c-4976-bf7e-31b0dade36fd">
-      <console name="Connection" type="STANDARD" schema="test" session="Main"><![CDATA[--create TABLE `test`.`magic` (`id` INT NOT NULL AUTO_INCREMENT, 
---`name` VARCHAR(45) NULL, `damage` INT NULL, `attack` INT NULL, `defence` INT NULL, PRIMARY KEY (`id`));
---delete from test.magic;
---alter table magic auto_increment=1;
-alter table magic
-ADD COLUMN damage INT NULL;]]></console>
+    <connection id="7ed15ba8-8c29-45c6-8f42-307e26d25704">
+      <console name="StudentsDB" type="STANDARD" schema="" session="Main" />
     </connection>
   </component>
   <component name="DBNavigator.Project.DatabaseEditorStateManager">
@@ -26,19 +21,19 @@ ADD COLUMN damage INT NULL;]]></console>
   </component>
   <component name="DBNavigator.Project.DatabaseFileManager">
     <open-files>
-      <object connection-id="801a3d2d-b26c-4976-bf7e-31b0dade36fd" object-ref="schemas/test/tables/magic" />
+      <object connection-id="7ed15ba8-8c29-45c6-8f42-307e26d25704" object-ref="consoles/StudentsDB" />
     </open-files>
-  </component>
-  <component name="DBNavigator.Project.DatasetFilterManager">
-    <filter-actions connection-id="801a3d2d-b26c-4976-bf7e-31b0dade36fd" dataset="test.table" active-filter-id="EMPTY_FILTER" />
-    <filter-actions connection-id="801a3d2d-b26c-4976-bf7e-31b0dade36fd" dataset="test.magic" active-filter-id="EMPTY_FILTER">
-      <filter id="539c6a29-e718-4e16-87dd-dfb7e41b71e1" name="Filter" temporary="false" custom-name="false" type="basic" join-type="AND">
-        <condition column="id" operator="=" value="" active="true" />
-      </filter>
-    </filter-actions>
   </component>
   <component name="DBNavigator.Project.ExecutionManager">
     <retain-sticky-names value="false" />
+  </component>
+  <component name="DBNavigator.Project.MethodExecutionManager">
+    <method-browser />
+    <execution-history>
+      <group-entries value="true" />
+      <execution-inputs />
+    </execution-history>
+    <argument-values-cache />
   </component>
   <component name="DBNavigator.Project.ObjectQuickFilterManager">
     <last-used-operator value="EQUAL" />
@@ -46,10 +41,10 @@ ADD COLUMN damage INT NULL;]]></console>
   </component>
   <component name="DBNavigator.Project.Settings">
     <connections>
-      <connection id="801a3d2d-b26c-4976-bf7e-31b0dade36fd" active="true" signed="true">
+      <connection id="7ed15ba8-8c29-45c6-8f42-307e26d25704" active="true" signed="true">
         <database>
-          <name value="Connection" />
-          <description value="" />
+          <name value="StudentsDB" />
+          <description value="seminar 4" />
           <database-type value="MYSQL" />
           <config-type value="BASIC" />
           <database-version value="8.0" />
@@ -108,7 +103,7 @@ ADD COLUMN damage INT NULL;]]></console>
           <tcp-port-from value="4000" />
           <tcp-port-to value="4999" />
         </debugger>
-        <object-filters hide-empty-schemas="false" hide-pseudo-columns="false" hide-audit-columns="false">
+        <object-filters hide-empty-schemas="true" hide-pseudo-columns="false" hide-audit-columns="false">
           <object-type-filter>
             <object-type name="SCHEMA" enabled="true" />
             <object-type name="USER" enabled="true" />
