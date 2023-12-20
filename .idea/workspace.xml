@@ -5,11 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9fc2048b-30c6-4f9f-88dc-a0c5aa373228" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/mysql/seminar/models/Student.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/mysql/seminar/task1/Program.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/mysql/seminar/models/Repository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/mysql/seminar/models/StudentsRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/mysql/seminar/models/StudentsRepositoryImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/mysql/seminar/task2/Program.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/hibernate2.cfg.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dbnavigator.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mysql/lecture/Magic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mysql/lecture/Magic.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mysql/seminar/models/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mysql/seminar/models/Student.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mysql/seminar/task1/Program.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mysql/seminar/task1/Program.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,15 +24,13 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
-  <component name="HighlightingSettingsPerFile">
-    <setting file="db://801a3d2d-b26c-4976-bf7e-31b0dade36fd/consoles/Connection" root0="SKIP_INSPECTION" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />

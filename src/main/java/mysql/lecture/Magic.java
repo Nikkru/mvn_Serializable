@@ -6,7 +6,8 @@ import javax.persistence.*;
 @Table(name = "test.magic")
 public class Magic {
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY) private int id;
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private int id;
     @Column(name = "name")
     private String name;
     @Column(name = "defence")

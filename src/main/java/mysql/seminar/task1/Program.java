@@ -54,10 +54,32 @@ public class Program {
             System.out.println("Insert data successfully");
 
             // Чтение данных
+            Collection<Student> students = readData(connection);
+
+            for (var student: students)
+                System.out.println(student);
+            System.out.println("Read data successfully");
+
+            // Обновление данных
+            for (var student: students) {
+                student.updateName();
+                student.updateAge();
+                updateData(connection, student);
+            }
+            System.out.println("Update data successfully");
+
+            students = readData(connection);
+            for (var student: students)
+                System.out.println(student);
+            System.out.println("Read data successfully");
+
+            for (var student: students)
+                deleteData(connection, student.getId());
+            System.out.println("Delete data successfully");
 
             // Закрытие соединения
-             connection.close();
-             System.out.println("Database connection close successfully");
+//             connection.close();
+//             System.out.println("Database connection close successfully");
         } catch (SQLException e) {
             throw new RuntimeException(e);
         }
@@ -120,6 +142,36 @@ public class Program {
                 studentsList.add(new Student(id, name, age));
             }
             return studentsList;
+        }
+    }
+
+    /**
+     * Обновление данных в таблице students по идентификатору
+     * @param connection Соединение с БД
+     * @param student Студент
+     * @throws SQLException Исключение при выполнении запроса
+     */
+    private static void updateData(Connection connection, Student student) throws SQLException {
+        String updateDataSQL = "UPDATE students SET name=?, age=? WHERE id=?;";
+        try (PreparedStatement statement = connection.prepareStatement(updateDataSQL)) {
+            statement.setString(1, student.getName());
+            statement.setInt(2, student.getAge());
+            statement.setInt(3, student.getId());
+            statement.executeUpdate();
+        }
+    }
+
+    /**
+     * Удаление записи из таблицы students по идентификатору
+     * @param connection Соединение с БД
+     * @param id Идентификатор записи
+     * @throws SQLException Исключение при выполнении запроса
+     */
+    private static void deleteData(Connection connection, int id) throws SQLException {
+        String deleteDataSQL = "DELETE FROM students WHERE id=?;";
+        try (PreparedStatement statement = connection.prepareStatement(deleteDataSQL)) {
+            statement.setLong(1, id);
+            statement.executeUpdate();
         }
     }
 //    endregion

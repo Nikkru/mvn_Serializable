@@ -32,6 +32,7 @@ public class Student {
     }
 
     public static Student create(){
+
         return new Student(names[random.nextInt(names.length)], random.nextInt(20, 26));
     }
 
