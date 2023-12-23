@@ -5,16 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9fc2048b-30c6-4f9f-88dc-a0c5aa373228" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/mysql/seminar/models/Repository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/mysql/seminar/models/StudentsRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/mysql/seminar/models/StudentsRepositoryImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/mysql/seminar/task2/Program.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/hibernate2.cfg.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/mysql/seminar/homework4/Connector.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/mysql/seminar/homework4/Course.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/mysql/seminar/homework4/DataB.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/mysql/seminar/homework4/HibernateUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/mysql/seminar/homework4/HibernateUtility.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/mysql/seminar/homework4/Program.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/hibernate3.cfg.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dbnavigator.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/mysql/lecture/Magic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mysql/lecture/Magic.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/mysql/seminar/models/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mysql/seminar/models/Student.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/mysql/seminar/task1/Program.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mysql/seminar/task1/Program.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -105,6 +105,35 @@
       </deployment>
       <method v="2" />
     </configuration>
+    <configuration name="StudentsDBConfiguration2" type="docker-deploy" factoryName="docker-image" temporary="true" server-name="Docker">
+      <deployment type="docker-image">
+        <settings>
+          <option name="imageTag" value="201612326/mysql-container:latest" />
+          <option name="containerName" value="students-db" />
+          <option name="envVars">
+            <list>
+              <DockerEnvVarImpl>
+                <option name="name" value="MYSQL_ROOT_PASSWORD" />
+                <option name="value" value="password" />
+              </DockerEnvVarImpl>
+              <DockerEnvVarImpl>
+                <option name="name" value="MYSQL_DATABASE" />
+                <option name="value" value="studentsDB2" />
+              </DockerEnvVarImpl>
+            </list>
+          </option>
+          <option name="portBindings">
+            <list>
+              <DockerPortBindingImpl>
+                <option name="containerPort" value="3306" />
+                <option name="hostPort" value="5500" />
+              </DockerPortBindingImpl>
+            </list>
+          </option>
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
     <configuration default="true" type="docker-deploy" factoryName="docker-image" temporary="true">
       <deployment type="docker-image">
         <settings />
@@ -113,6 +142,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Docker.StudentsDBConfiguration2" />
         <item itemvalue="Application.App" />
       </list>
     </recent_temporary>
