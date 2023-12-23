@@ -71,12 +71,15 @@ public class HibernateUtility {
         Transaction transaction = null;
         transaction = session.beginTransaction();
 
-        Course course = session.get(Course.class, id);
-        String title = course.getName();
-        session.delete(course);
-
-        transaction.commit();
-        session.close();
-        System.out.println("Course " + title + " was successfully remove");
+        try {
+            Course course = session.get(Course.class, id);
+            String title = course.getName();
+            session.delete(course);
+            transaction.commit();
+            session.close();
+            System.out.println("Course " + title + " was successfully remove");
+        } catch (NullPointerException e) {
+            System.out.println(e.getMessage());
+        }
     }
 }

@@ -5,7 +5,7 @@ public class Program {
 //        HibernateUtility.addCourse("Java Kit + Hibernate", 40);
         HibernateUtility.getCourses();
 //        HibernateUtility.updateCourse(15, "Java Just Kit +", 13);
-        HibernateUtility.removeCourse(10);
+        HibernateUtility.removeCourse(30);
         HibernateUtility.getCourses();
     }
 }
