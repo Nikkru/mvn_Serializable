@@ -5,9 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9fc2048b-30c6-4f9f-88dc-a0c5aa373228" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/net/lecture/Client1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/net/lecture/ClientExample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/net/lecture/ClientManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/net/lecture/HelloWorld.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/net/lecture/Server.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/net/lecture/ServerExample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/net/lecture/ServerReadThread.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/mysql/seminar/homework4/HibernateUtility.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mysql/seminar/homework4/HibernateUtility.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/mysql/seminar/homework4/Program.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mysql/seminar/homework4/Program.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
